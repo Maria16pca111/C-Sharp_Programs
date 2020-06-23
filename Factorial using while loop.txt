@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Factorial
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the number ");
+            int number = int.Parse(Console.ReadLine());
+            int fact = 1;
+            int val = number;
+            while (val > 0)
+            {
+                fact = fact * val;
+                val--;
+            }
+           
+            Console.WriteLine("The factorial {0} value is {1}",number,fact);
+        }
+    }
+}

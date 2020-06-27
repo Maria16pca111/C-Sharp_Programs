@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Swapping
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int temp;
+            Console.WriteLine("\nBefore swapping a={0}, b={1} ",a,b);
+            temp = a + b;
+            a = temp - a;
+            b = temp - b;
+            Console.WriteLine("After swapping a={0}, b={1} \n",a,b);
+
+
+        }
+    }
+}
